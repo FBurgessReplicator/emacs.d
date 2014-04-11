@@ -39,6 +39,9 @@
 ;; enable ido-mode
 (ido-mode t)
 
+;; enable ibuffer
+(defalias 'list-buffers 'ibuffer)
+
 ;; M-left arrow/right arrow to change buffer
 (global-set-key (kbd "M-<left>") 'previous-buffer)
 (global-set-key (kbd "M-<right>") 'next-buffer)

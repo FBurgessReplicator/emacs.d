@@ -57,6 +57,9 @@
 ;; set iedit
 (load "config/iedit.el")
 
+;; set python-version-select
+(load "config/python-version-select.el")
+
 ;; set elpy
 (load "config/elpy.el")
 
