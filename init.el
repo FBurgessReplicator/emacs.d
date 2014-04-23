@@ -39,6 +39,9 @@
 ;; enable ido-mode
 (ido-mode t)
 
+;; enable show-paren-mode
+(show-paren-mode t)
+
 ;; enable ibuffer
 (defalias 'list-buffers 'ibuffer)
 
@@ -66,7 +69,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ecb-layout-window-sizes (quote (("left11" (ecb-methods-buffer-name 0.22727272727272727 . 0.7096774193548387) (ecb-history-buffer-name 0.22727272727272727 . 0.25806451612903225)) ("left6" (ecb-sources-buffer-name 0.24242424242424243 . 0.25806451612903225) (ecb-methods-buffer-name 0.24242424242424243 . 0.5483870967741935) (ecb-history-buffer-name 0.24242424242424243 . 0.16129032258064516)))))
+ '(ecb-layout-window-sizes (quote (("left15" (ecb-directories-buffer-name 0.25757575757575757 . 0.41935483870967744) (ecb-methods-buffer-name 0.25757575757575757 . 0.5483870967741935)) ("left11" (ecb-methods-buffer-name 0.22727272727272727 . 0.7096774193548387) (ecb-history-buffer-name 0.22727272727272727 . 0.25806451612903225)) ("left6" (ecb-sources-buffer-name 0.24242424242424243 . 0.25806451612903225) (ecb-methods-buffer-name 0.24242424242424243 . 0.5483870967741935) (ecb-history-buffer-name 0.24242424242424243 . 0.16129032258064516)))))
  '(ecb-options-version "2.40"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

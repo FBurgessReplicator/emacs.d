@@ -6,12 +6,19 @@
 (defun python-use-python2 ()
   (interactive)
   (setq elpy-rpc-python-command "/usr/bin/python2")
+  (setq python-shell-interpreter "/usr/bin/ipython2")
   (setq jedi:environment-root "python2")
-  (setq jedi:environment-virtualenv '("virtualenv2" "--system-site-packages")))
+  (setq jedi:environment-virtualenv '("virtualenv2" "--system-site-packages"))
+  (jedi:install-server))
+
 
 (defun python-use-python3 ()
   (interactive)
   (setq elpy-rpc-python-command "/usr/bin/python3")
+  (setq python-shell-interpreter "/usr/bin/ipython3")
   (setq jedi:environment-root "python3")
-  (setq jedi:environment-virtualenv '("virtualenv3" "--system-site-packages")))
+  (setq jedi:environment-virtualenv '("virtualenv3" "--system-site-packages"))
+  (jedi:install-server))
+
+
 

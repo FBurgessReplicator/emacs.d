@@ -3,4 +3,4 @@
 (global-ede-mode t)
 (ede-enable-generic-projects)
 
-(setq ecb-layout-name "left11")
+(setq ecb-layout-name "left15")

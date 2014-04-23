@@ -21,6 +21,12 @@
 ;; set packages
 (load "config/package.el")
 
+;; set highlight-indentation
+(load "config/highlight-indentation-mode.el")
+
+;; set highlight-symbol
+(load "config/highlight-symbol-mode.el")
+
 ;; basic plugins ends here
 
 
