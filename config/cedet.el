@@ -36,12 +36,9 @@
       (local-set-key "\C-cp" 'semantic-analyze-proto-impl-toggle))
 
 (add-hook 'c-mode-common-hook 'alexott/cedet-hook)
-(add-hook 'c++-mode-common-hook 'alexott/cedet-hook)
-(add-hook 'python-mode 'alexott/cedet-hook)
 ;; (add-hook 'emacs-lisp-mode-hook 'alexott/cedet-hook)
-;; (add-hook 'erlang-mode-hook 'alexott/cedet-hook)
-;; (add-hook 'lisp-mode-hook 'alexott/cedet-hook)
-;; (add-hook 'scheme-mode-hook 'alexott/cedet-hook)
+;; (add-hook 'haskell-mode-hook 'alexott/cedet-hook)
+;; (add-hook 'python-mode-hook 'alexott/cedet-hook)
 
 (defun alexott/c-mode-cedet-hook ()
     (local-set-key "\C-ct" 'eassist-switch-h-cpp)
