@@ -5,6 +5,19 @@
 
 
 
+;; plugins that need to add-hook
+
+;; cedet - only c/c++
+;; google-c-style - only c/c++
+;; highlight-symbol - c/c++, emacs-lisp, haskell, python, scheme
+;; hideshow - c/c++, emacs-lisp, haskell, python, scheme
+;; paredit - only emacs-lisp, scheme
+;; rainbow-identifiers - c/c++, emacs-lisp, haskell, python, scheme
+
+;; plugins that need to add-hook ends here
+
+
+
 ;; plugin configuration
 
 ;; basic plugins
@@ -15,38 +28,47 @@
 ;; set color-theme
 (load "config/color-theme.el")
 
+;; set discover-my-major
+(load "config/discover-my-major.el")
+
 ;; set framemove
 (load "config/framemove.el")
+
+;; set google-c-style
+(load "config/google-c-style.el")
+
+;; set hideshow
+(load "config/hideshow.el")
+
+;; set highlight-indentation
+(load "config/highlight-indentation.el")
+
+;; set highlight-symbol
+(load "config/highlight-symbol.el")
+
+;; set iedit
+(load "config/iedit.el")
+
+;; set org-mode
+(load "config/org-mode.el")
 
 ;; set packages
 (load "config/package.el")
 
-;; set highlight-indentation
-(load "config/highlight-indentation-mode.el")
+;; set rainbow-delimiters
+(load "config/rainbow-delimiters.el")
 
-;; set highlight-symbol
-(load "config/highlight-symbol-mode.el")
+;; set rainbow-identifiers
+(load "config/rainbow-identifiers.el")
+
+;; set yasnippet
+ (load "config/yasnippet.el")
 
 ;; basic plugins ends here
 
 
 
-;; yasnippet auto-complete and auto-complete-clang 
-
-;; set yasnippet
-(load "config/yasnippet.el")
-
-;; set auto-complete
-(load "config/auto-complete.el")
-
-;; set auto-complete-clang
-(load "config/auto-complete-clang.el")
-
-;; yasnippet auto-complete and auto-complete-clang ends here
-
-
-
-;; cedet and ecb
+;; common IDE - cedet and ecb
 
 ;; set cedet 
 (load "config/cedet.el")
@@ -54,14 +76,23 @@
 ;; set ecb
 (load "config/ecb.el")
 
-;; cedet and ecb ends here
+;; common IDE - cedet and ecb ends here
 
 
 
-;; iedit, elpy and jedi
+;; c/c++ - auto-complete and auto-complete-clang 
 
-;; set iedit
-(load "config/iedit.el")
+;; set auto-complete
+(load "config/auto-complete.el")
+
+;; set auto-complete-clang
+(load "config/auto-complete-clang.el")
+
+;; c/c++ - auto-complete and auto-complete-clang ends here
+
+
+
+;; python - python-version-select, elpy and jedi
 
 ;; set python-version-select
 (load "config/python-version-select.el")
@@ -72,7 +103,37 @@
 ;; set jedi
 (load "config/jedi.el")
 
-;; iedit, elpy and jedi ends here
+;; python - python-version-select, elpy and jedi ends here
+
+
+
+;; haskell - haskell-mode, scion and ghc
+
+;; set haskell-mode
+(load "config/haskell-mode.el")
+
+;; set scion
+;; (load "config/scion.el")
+
+;; set ghc
+;; (load "config/ghc.el")
+
+;; haskell - haskell-mode, scion and ghc ends here
+
+
+
+;; scheme/racket - quack, geiser and paredit
+
+;; set quack
+(load "config/quack.el")
+
+;; set geiser
+(load "config/geiser.el")
+
+;; set paredit
+(load "config/paredit.el")
+
+;; scheme/racket - quack, geiser and paredit ends here
 
 ;; plugin configuration ends here
 
